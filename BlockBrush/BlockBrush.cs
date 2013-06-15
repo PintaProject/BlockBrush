@@ -25,6 +25,7 @@
 // THE SOFTWARE.
 
 using System;
+using Mono.Addins;
 using Pinta.Core;
 
 namespace BlockBrush
@@ -32,7 +33,7 @@ namespace BlockBrush
 	public class BlockBrush : BasePaintBrush
 	{
 		public override string Name {
-			get { return "Block"; }
+			get { return AddinManager.CurrentLocalizer.GetString ("Block"); }
 		}
 
 		protected override Gdk.Rectangle OnMouseMove (Cairo.Context g, Cairo.Color strokeColor,
