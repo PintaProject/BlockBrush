@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlockBrush", "BlockBrush\BlockBrush.csproj", "{79AF6FB7-8573-43A3-986B-69C0AF30DA4A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{79AF6FB7-8573-43A3-986B-69C0AF30DA4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79AF6FB7-8573-43A3-986B-69C0AF30DA4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79AF6FB7-8573-43A3-986B-69C0AF30DA4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79AF6FB7-8573-43A3-986B-69C0AF30DA4A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = BlockBrush\BlockBrush.csproj
+	EndGlobalSection
+EndGlobal
