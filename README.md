@@ -1,7 +1,7 @@
 Pinta Block Brush Addin
 =========
 
-This addin provides a custom brush for Pinta that is similar to the block brush
+This add-in provides a custom brush for Pinta that is similar to the block brush
 in GIMP.
 
 ##Bugs
