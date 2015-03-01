@@ -28,9 +28,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="Mono.Addins">
-      <HintPath>lib\Mono.Addins.dll</HintPath>
-    </Reference>
     <Reference Include="Pinta.Core">
       <HintPath>lib\Pinta.Core.dll</HintPath>
     </Reference>
@@ -38,6 +35,7 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="Mono.Cairo" />
+    <Reference Include="Mono.Addins" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
