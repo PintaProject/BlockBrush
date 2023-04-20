@@ -51,9 +51,9 @@ namespace BlockBrush
 		/// <param name="lastX">The previous x coordinate of the mouse.</param>
 		/// <param name="lastY">The previous y coordinate of the mouse.</param>
 		/// <returns>A rectangle containing the area of the canvas that should be redrawn.</returns>
-		protected override Gdk.Rectangle OnMouseMove (Cairo.Context g, Cairo.Color strokeColor,
-		                                              Cairo.ImageSurface surface,int x, int y,
-		                                              int lastX, int lastY)
+		protected override RectangleI OnMouseMove (Cairo.Context g, Cairo.Color strokeColor,
+							   Cairo.ImageSurface surface, int x, int y,
+							   int lastX, int lastY)
 		{
 			// Use the brush width as the width of the block.
 			double width = g.LineWidth;
@@ -69,7 +69,7 @@ namespace BlockBrush
 			g.LineTo (x - width, y);
 			g.LineTo (lastX - width, lastY);
 
-			var dirty = g.FixedStrokeExtents ().ToGdkRectangle ();
+			var dirty = g.StrokeExtents ().ToInt ();
 			g.Fill ();
 			return dirty;
 		}
