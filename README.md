@@ -1,6 +1,8 @@
 Pinta Block Brush Addin
 =========
 
+[![Translation status](https://hosted.weblate.org/widget/pinta/blockbrushaddin/287x66-grey.png)](https://hosted.weblate.org/engage/pinta/)
+
 This add-in provides a custom brush for Pinta that is similar to the block brush
 in GIMP.
 
