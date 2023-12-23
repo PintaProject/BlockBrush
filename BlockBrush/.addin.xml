@@ -3,7 +3,7 @@
 	<Header>
 		<Name>Block Brush</Name>
 		<Description>A brush similar to the block brush in GIMP.</Description>
-		<Author>Cameron White</Author>
+		<Author>Pinta Project</Author>
 		<Url>https://github.com/PintaProject/BlockBrush</Url>
 	</Header>
 	<Dependencies>
