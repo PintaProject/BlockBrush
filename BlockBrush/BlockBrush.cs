@@ -35,39 +35,35 @@ namespace BlockBrush
 		/// <summary>
 		/// The name of the brush.
 		/// </summary>
-		public override string Name {
-			get { return AddinManager.CurrentLocalizer.GetString ("Block"); }
-		}
+		public override string Name => AddinManager.CurrentLocalizer.GetString ("Block");
 
 		/// <summary>
 		/// Event handler called when the mouse is moved. This method is where
 		/// the brush should perform its drawing.
 		/// </summary>
 		/// <param name="g">The current Cairo drawing context.</param>
-		/// <param name="strokeColor">The current stroke color.</param>
 		/// <param name="surface">Image surface to draw on.</param>
-		/// <param name="x">The current x coordinate of the mouse.</param>
-		/// <param name="y">The current y coordinate of the mouse.</param>
-		/// <param name="lastX">The previous x coordinate of the mouse.</param>
-		/// <param name="lastY">The previous y coordinate of the mouse.</param>
+		/// <param name="strokeArgs">Information about the current stroke and mouse movement.</param>
 		/// <returns>A rectangle containing the area of the canvas that should be redrawn.</returns>
-		protected override RectangleI OnMouseMove (Cairo.Context g, Cairo.Color strokeColor,
-							   Cairo.ImageSurface surface, int x, int y,
-							   int lastX, int lastY)
+		protected override RectangleI OnMouseMove (Cairo.Context g,
+							   Cairo.ImageSurface surface,
+							   BrushStrokeArgs strokeArgs)
 		{
 			// Use the brush width as the width of the block.
 			double width = g.LineWidth;
 
 			// When moving the brush horizontally, avoid having a zero-height line.
-			if (lastY == y)
-				y++;
+			PointI last = strokeArgs.LastPosition;
+			PointI pos = strokeArgs.CurrentPosition;
+			if (strokeArgs.LastPosition.Y == pos.Y)
+				pos = pos with { Y = pos.Y + 1 };
 
 			// Draw a parallelogram.
-			g.MoveTo (lastX - width, lastY);
-			g.LineTo (lastX + width, lastY);
-			g.LineTo (x + width, y);
-			g.LineTo (x - width, y);
-			g.LineTo (lastX - width, lastY);
+			g.MoveTo (last.X - width, last.Y);
+			g.LineTo (last.X + width, last.Y);
+			g.LineTo (pos.X + width, pos.Y);
+			g.LineTo (pos.X - width, pos.Y);
+			g.LineTo (last.X - width, last.Y);
 
 			var dirty = g.StrokeExtents ().ToInt ();
 			g.Fill ();
