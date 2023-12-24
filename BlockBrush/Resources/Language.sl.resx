@@ -70,4 +70,8 @@
     <value>Združitveni čopič</value>
     <comment />
   </data>
+  <data name="A rectangular block-shaped brush." xml:space="preserve">
+    <value>Pravokotno združitveno oblikovani čopič.</value>
+    <comment />
+  </data>
 </root>
