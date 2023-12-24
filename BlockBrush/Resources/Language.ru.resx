@@ -70,4 +70,8 @@
     <value>Кисть в виде блока</value>
     <comment />
   </data>
+  <data name="A rectangular block-shaped brush." xml:space="preserve">
+    <value>Кисть в форме прямоугольного блока.</value>
+    <comment />
+  </data>
 </root>
