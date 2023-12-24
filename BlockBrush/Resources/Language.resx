@@ -119,14 +119,14 @@
   </resheader>
   <data name="Block" xml:space="preserve">
     <value>Block</value>
-    <comment>This refers to a block-shaped brush</comment>
+    <comment>This refers to a rectangular block-shaped paintbrush</comment>
   </data>
   <data name="Block Brush" xml:space="preserve">
     <value>Block Brush</value>
-    <comment/>
+    <comment>This refers to a rectangular block-shaped paintbrush</comment>
   </data>
-  <data name="A brush similar to the block brush in GIMP." xml:space="preserve">
-    <value>A brush similar to the block brush in GIMP.</value>
+  <data name="A rectangular block-shaped brush." xml:space="preserve">
+    <value>A rectangular block-shaped brush.</value>
     <comment/>
   </data>
 </root>

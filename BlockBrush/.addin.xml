@@ -2,7 +2,7 @@
 <Addin id="BlockBrush" version="0.2.1" category="Brushes">
 	<Header>
 		<Name>Block Brush</Name>
-		<Description>A brush similar to the block brush in GIMP.</Description>
+		<Description>A rectangular block-shaped brush.</Description>
 		<Author>Pinta Project</Author>
 		<Url>https://github.com/PintaProject/BlockBrush</Url>
 	</Header>
