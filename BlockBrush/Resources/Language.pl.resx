@@ -70,4 +70,8 @@
     <value>Pędzel blokowy</value>
     <comment />
   </data>
+  <data name="A rectangular block-shaped brush." xml:space="preserve">
+    <value>Prostokątny pędzel w kształcie bloku.</value>
+    <comment />
+  </data>
 </root>
