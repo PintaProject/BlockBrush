@@ -70,4 +70,8 @@
     <value>Blok Fırça</value>
     <comment />
   </data>
+  <data name="A rectangular block-shaped brush." xml:space="preserve">
+    <value>Dikdörtgen blok şeklinde bir fırça.</value>
+    <comment />
+  </data>
 </root>
