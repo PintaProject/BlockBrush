@@ -5,6 +5,9 @@
 
     <Version>0.2.1.0</Version>
     <Authors>Cameron White</Authors>
+
+    <!-- Don't include resource files since we embed these in the addin manifest -->
+    <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
   </PropertyGroup>
 
   <ItemGroup>
