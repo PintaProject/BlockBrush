@@ -64,4 +64,7 @@
   <data name="Block" xml:space="preserve">
     <value>Lohko</value>
   </data>
+  <data name="A rectangular block-shaped brush." xml:space="preserve">
+    <value>Suorakulmainen, lohkon muotoinen sivellin.</value>
+  </data>
 </root>
