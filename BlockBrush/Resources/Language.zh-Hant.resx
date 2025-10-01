@@ -59,6 +59,12 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Block" xml:space="preserve">
-    <value>Open sistema Real</value>
+    <value>方形</value>
+  </data>
+  <data name="Block Brush" xml:space="preserve">
+    <value>方形筆刷</value>
+  </data>
+  <data name="A rectangular block-shaped brush." xml:space="preserve">
+    <value>長方形的筆刷。</value>
   </data>
 </root>
