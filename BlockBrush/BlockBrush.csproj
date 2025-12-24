@@ -3,7 +3,7 @@
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
 
-    <Version>0.2.3.0</Version>
+    <Version>0.2.4.0</Version>
     <Authors>Cameron White</Authors>
 
     <!-- Don't include resource files since we embed these in the addin manifest -->
